@@ -31,4 +31,30 @@ data = {
 
 # Affichage du tableau de données sous forme de graphique
 #plt.figure(figsize=(10))
-#plt.bar(df["Séquence"], df["pourcentage"]
+#plt.bar(df["Séquence"], df["pourcentage GC"],color='skyblue')
+#plt.xlabel("Séquences")
+#plt.ylabel("pourcentage GC")
+#plt.title("pourcentage de GC par séquence")
+#plt.show()
+
+#3)Filtrer les séquences avec un pourcentage de GC supérieur à 10%
+print("****************Filtrage avec pourcentage % ****************")
+# Filtrer les séquences avec un pourcentage % ****************")
+filtered_df = df[df["pourcentage GC"] > 10] 
+print(filtered_df, "\n\n")
+
+#4)Calculer la moyenne du pourcentage de GC
+print("****************Calcul de la moyenne****************")
+#Calculer la moyenne du pourcentage de GC
+average_gc = df["pourcentage GC"].mean()
+print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n")
+
+
+
+
+
+
+
+
+
+
