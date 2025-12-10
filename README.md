@@ -11,47 +11,30 @@ data = {
      "Séquence": ["ATGCGTACGTA", "GCTAGCTAGGCC", "ATGCGCGTAAGT", "TACGATCGTA", "ATGAAAGGCTT", "CGTACGTAGC", "TTAACCGGAT"],
      "Longueur": [11, 12, 12, 10, 11, 10, 10],
      "pourcentage GC":[50, 66.67, 58.33, 40, 45.45, 60 ,50]
-     }
+}
 
-     # Création d'un DataFrame (tableau pandas)
-     df = pd.DataFrame(data)
-     print("**************** Creation et affichage ****************")
+# Création d'un DataFrame (tableau pandas)
+df = pd.DataFrame(data)
+print("**************** Creation et affichage ****************")
 
-     # Affichage du tableau 
-     print("Tableau des séquences ADN :")
-     print(df, "\n\n")
+# Affichage du tableau 
+print("Tableau des séquences ADN :")
+print(df, "\n\n")
 
-     # Operation sur les tableaux:
-     print("**************** Operations ****************")
-     #1) Sélectionner la colonne "Séquence"
-     sequences = df["Séquence"]
-     print(sequences)
+# Operation sur les tableaux:
+print("**************** Operations ****************")
+ #1) Sélectionner la colonne "Séquence"
+sequences = df["Séquence"]
+print(sequences)
 
-     #2) Affichage avec une bibliothèque de visualisation (matplotib)
-     #import matplotib.pyplot as plt
-     # Données
-     #Longueur = [11, 12, 12, 10, 11, 10, 10]
-     # Création d'un DataFrame
-     #data = {"Longueur":longueur
-     #df = pd.DataFrame(data)
+ #2) Affichage avec une bibliothèque de visualisation (matplotib)
+ #import matplotib.pyplot as plt
+ # Données
+#Longueur = [11, 12, 12, 10, 11, 10, 10]
+# Création d'un DataFrame
+#data = {"Longueur":longueur
+ #df = pd.DataFrame(data)
      
-
-
-
-
-
-     
-     
-
-
-
-
-
-
-
-
-
-
 # Affichage du tableau de données sous forme de graphique
 #plt.figure(figsize=(10))
 #plt.bar(df["Séquence"], df["pourcentage GC"],color='skyblue')
