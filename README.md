@@ -65,7 +65,15 @@ print(df)
 df["nombre de G"] = df["Séquence"].str.count("G")
 
 
+#7) calculer  l'écart-type du pourcentage GC
+print("*************calcul de l'écart-type *************")
+#calculer l'écart-type du pourcentage de GC
+average_ df["pourcentage GC ].mean()
+print(f"pourcentage l' ecart-type de GC) :{average_gc:2f}%","\n\n")
 
+#8)sauvegarde et changementdes données avec panda 
+#sauvegarder le DataFrame dans un fichier csv
+df.to _ csv("tableau _ sequences.csv",index=False)
 
 
 
