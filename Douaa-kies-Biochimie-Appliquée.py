@@ -1,3 +1,5 @@
+#Kies Douaa, Master 1 Biochimie Appliquée, 07\12\2025
+
 #pandas with Kies Douaa , Mehenni Soumia ,Otmane romaissaa and Lokbani Kawther
 #for applied biochemestry Master Tlemecen ...07\12\2025
 
@@ -54,10 +56,10 @@ average_gc = df["pourcentage GC"].mean()
 print(f"pourcentage moyen de GC : {average_gc:.3f}%", "\n\n")
 
 
-#5)Ajouter une nouvelle colonne avec des Calculs
+#5)Ajouter une nouvelle colonne avec des calculs
 print("****************Ajout d'une nouvelle colonne****************")
-# Ajouter une nouvelle colonne "longueur catégorisée" 
-df["Catégorie GC"] = df["Longueur"].apply(lambda x:"longue" if x>50 else "Riche" if 45 <= x <= 55 else"moyen" if x<45 else "faible")
+# Ajouter une nouvelle colonne "longueur catégorisée"
+df["catégorie GC"] = df["Longueur"].apply(lambda x:"longue" if x>50 else "Riche" if 45 <= x <= 55 else"moyen" if x<45 else "faible")
 print(df)
 
 #6) Ajouter une colonne donnant le nombre de 'G' dans chaque séquence
